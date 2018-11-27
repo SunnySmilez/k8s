@@ -9,4 +9,5 @@
 3. 简单的实践
 
 > [deployment概念熟悉](https://github.com/SunnySmilez/k8s/tree/master/deployment)
+
 > [service+deployment熟悉](https://github.com/SunnySmilez/k8s/tree/master/guestbook)    
