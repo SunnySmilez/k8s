@@ -1,24 +1,25 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: deployment-nginx
+  name: test-nginx
   labels:
-    name: nginx
-    version: v1.7.9
-    app: demo
+    name: test-nginx
   annotations:
-    name: nginx1.7.9
+    name: test-nginx
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app:  deployment-lnmp
+        app:  test-nginx
     spec:
       restartPolicy: Always
       containers:
-      - name: nginx
-        image: nginx:1.8
+      - name: test-nginx
+        image: test-nginx
         imagePullPolicy: Never
         command: ["/bin/sh"]
         args: ["-c", "nginx -g 'daemon off;'"]
+        ports:
+          - name: http
+            containerPort: 80

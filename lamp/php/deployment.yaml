@@ -1,22 +1,23 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: deployment-lnmp
+  name: test-server
   labels:
-    name: php
-    version: v7
-    app: demo
+    name: test-server
   annotations:
-    name: php7
+    name: test-server
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app:  deployment-lnmp
+        app:  test-server
     spec:
       restartPolicy: Always
       containers:
-      - name: php
-        image: sunnysmilez/php
+      - name: test-server
+        image: test-php
         imagePullPolicy: Never
+        command: ["php-fpm"]
+        ports:
+        - containerPort: 9000
