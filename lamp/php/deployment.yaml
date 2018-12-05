@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: deployment-lnmp
+  labels:
+    name: php
+    version: v7
+    app: demo
+  annotations:
+    name: php7
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app:  deployment-lnmp
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: php
+        image: sunnysmilez/php
+        imagePullPolicy: Never
