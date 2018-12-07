@@ -10,6 +10,7 @@ spec:
   replicas: 1
   template:
     metadata:
+      name: test-nginx
       labels:
         app:  test-nginx
     spec:
@@ -21,5 +22,4 @@ spec:
         command: ["/bin/sh"]
         args: ["-c", "nginx -g 'daemon off;'"]
         ports:
-          - name: http
-            containerPort: 80
+          - containerPort: 80
