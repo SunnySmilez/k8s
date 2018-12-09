@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-service      #service名称
+  labels:
+    name: test-label      #自定义标签
+spec:
+  selector:
+    app: test-app          #请求代理具有标签“app=test-app”的POD上
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376    #需要转发到后端POD的端口号
+      nodePort: 30001
+  clusterIP:  10.96.1.10
+  loadBalancerIP: 218.30.116.3
+  type: LoadBalancer      #service的类型、访问方式。一般为nodePort、ClusterIP、LoadBalancer，这里是使用外部负载均衡器的云提供商的服务；type=LoadBalancer时，用于指定外部负载均衡器IP地址
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.1.103

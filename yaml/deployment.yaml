@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1    #指定apo版本
+kind: Deployment  #创建的资源类型
+metadata:
+  name: deployment-demo
+spec:     # deployment的规格说明
+  replicas: 2 #副本数量
+  template: #定义pod模板
+    metadata: #定义pod的元数据
+      labels: #定义pod的label
+        app: web_server
+    spec: #描述pod的规格
+      containers: #容器信息
+      - name: nginx
+        image: nginx:1.7.9  #镜像地址

@@ -1,7 +1,7 @@
 apiVersion: v1      #指定api版本
 kind: Pod               #创建资源的角色/类型
 metadata:               #资源的元数据/属性
-  name: web01           #资源名称
+  name: web01           #资源名称，必填
   labels:               #设定资源的标签
     test-label: demo
     version: v1
