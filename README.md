@@ -6,7 +6,10 @@
 2. 熟悉基本概念
 > [kubernetes 权威指南第1.4节](https://book.douban.com/subject/26902153/)
 
-3. 简单的实践
+3. 示例模板
+> [yaml编写示例](https://github.com/SunnySmilez/k8s/tree/master/yaml)
+
+4. 照着做
 
 > [deployment概念熟悉](https://github.com/SunnySmilez/k8s/tree/master/deployment)
 
@@ -14,4 +17,7 @@
 
 > [使用service连接前后端](https://github.com/SunnySmilez/k8s/tree/master/project)
 
-4. 搭建lnmp环境
+> [搭建wordpress示例](https://github.com/SunnySmilez/k8s/tree/master/mysql-wordpress)
+
+5. 实践
+> [k8s搭建项目，使用lnmp环境](https://github.com/SunnySmilez/k8s/tree/master/lnmp)
