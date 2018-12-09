@@ -1,4 +1,5 @@
 我使用的是mac下的minikube，所以直接minikube ssh 登录虚拟机，创建本地image
+
 创建php容器
 
 ```shell
