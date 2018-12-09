@@ -11,3 +11,7 @@
 > [deployment概念熟悉](https://github.com/SunnySmilez/k8s/tree/master/deployment)
 
 > [service+deployment熟悉](https://github.com/SunnySmilez/k8s/tree/master/guestbook)    
+
+> [使用service连接前后端](https://github.com/SunnySmilez/k8s/tree/master/project)
+
+4. 搭建lnmp环境
