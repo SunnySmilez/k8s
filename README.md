@@ -21,3 +21,6 @@
 
 5. 实践
 > [k8s搭建项目，使用lnmp环境](https://github.com/SunnySmilez/k8s/tree/master/lnmp)
+
+6. jenkins+k8s构建初步发布流程
+> [简版发布流程](https://github.com/SunnySmilez/k8s/tree/master/build)
