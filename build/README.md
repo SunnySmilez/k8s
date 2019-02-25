@@ -19,17 +19,4 @@
 - wayne选择版本，发布代码
 
 5. 目录介绍
-
-    build
-    ├── README.md
-    ├── code        #代码目录
-    ├── docker      #docker所需的配置项
-    │   ├── nginx   #nginx镜像
-    │   └── php     #php镜像
-    └── shell
-        ├── build.sh        #创建镜像的脚本
-        ├── git_hook.sh     #git钩子
-        ├── jenkins.php     #封装好的关于jenkins的操作
-        ├── jenkins.sh
-        ├── jenkins.xml     #jenkins发布流水线
-        └── k8s_conn.go     #封装好的k8s的示例操作
+![目录说明](/build/shell/path.png "目录说明")
