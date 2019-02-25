@@ -11,7 +11,10 @@
 
 4. 发布流程
 
+- 代码提交流程
 ![代码提交流程](/build/shell/code_pub.png "代码提交流程")
+
+- 代码发布流程
 ![代码发布流程](/build/shell/k8s_pub.png "代码发布流程")
 
 - 提交代码，触发git钩子（git_hook.sh）
